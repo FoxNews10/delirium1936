@@ -1,6 +1,6 @@
 ﻿capital = 19 #Aquitaine
 
-#oob = "JML_1936"
+oob = "JML_1936"
 
 set_research_slots = 3
 
