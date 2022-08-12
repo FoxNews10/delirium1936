@@ -1,0 +1,64 @@
+characters = {
+	JML_tucker_carlson = {
+		name = "Tucker Carlson" 
+		portraits = {
+			civilian = {
+				large = "GFX_portrait_jml_tucker_carlson"
+			}
+		}
+		country_leader = {
+			ideology = oligarchism
+			expire = "1950.1.1.1"
+			traits = {dislikes_germany}
+			id = -1
+		}	
+		field_marshal={
+			traits={ trait_reckless old_guard war_hero politically_connected media_personality }
+			skill=8
+			attack_skill=5
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	JML_bill_o_reilly = {
+		name = "Bill O'Reilly"
+		portraits = {
+			army = {
+				large = "GFX_portrait_jml_bill_o_reilly"
+			}
+			army = {
+				small = "GFX_portrait_jml_bill_o_reilly"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless war_hero old_guard }
+			skill = 5
+			attack_skill = 7
+			defense_skill = 0
+			planning_skill = 2
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+	JML_sean_hannity = {
+		name = "Sean Hannity"
+		portraits = {
+			army = {
+				large = "GFX_portrait_jml_sean_hannity"
+			}
+			army = {
+				small = "GFX_portrait_jml_sean_hannity"
+			}
+		}
+		field_marshal = {
+			traits = { offensive_doctrine media_personality old_guard }
+			skill = 8
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id = -1
+}
+

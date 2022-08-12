@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_portrait_jml_tucker_carlson"
+		texturefile = "gfx/leaders/JML/portrait_MLP.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_jml_bill_o_reilly"
+		texturefile = "gfx/leaders/JML/portrait_fox_1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_jml_sean_hannity"
+		texturefile = "gfx/leaders/JML/portrait_fox_2.dds"
+}
+
