@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = jamland_focus
 	
 	country = {
@@ -16,56 +16,78 @@
 
 
 	focus = {
-		id = jam_armarment_effort
+		id = jam_training_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 1
+		x = 5
 		y = 0
-		cost = 10
+		cost = 5
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
 		available_if_capitulated = yes
 
 		completion_reward = {
-			army_experience = 20
-			air_experience = 10
+			army_experience = 25
 			}
 		}
-	}
-
+		
+		
 	focus = {
-		id = cuba_is_the_greatest
-		icon = GFX_goal_generic_major_war
-		x = 10
-		y = 10
+		id = jam_taking_a_stance
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 20
+		y = 0
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
 		
-		available = {
-			NOT = { is_in_faction_with = JAP }
-			NOT = { has_country_flag = britain_enforced_our_loyalty }
-		}
-		
-		bypass = {
-		}
-		
-		cost = 10
-		
-		
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
-			create_wargoal = {
-				target = JAP
-				type = puppet_wargoal_focus
-				expire = 0 
-			}
+			add_political_power = 100
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
-			}
+	}
+	
+	
+	focus = {
+		id = jam_federalize_the_police
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 10
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		mutually_exclusive = { focus = jam_arm_people }
+		
+		prerequisite = { focus = jam_training_effort }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 20
+			add_manpower = 1000
+			add_stability = -.1
+		}
+	}
+	
+	
+	focus = {
+		id = jam_arm_people
+		icon = GFX_focus_generic_manpower
+		x = 0
+		y = 1
+		cost = 5
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		mutually_exclusive = { focus = jam_federalize_the_police }
+		
+		prerequisite = { focus = jam_training_effort }
+		
+		available_if_capitulated = yes
+		
+		completion_reward = {
+			army_experience = 5
+			add_manpower = 10000
+			add_stability - .-1
+			
 		}
 	}
 }
